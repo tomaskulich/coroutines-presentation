@@ -1,0 +1,11 @@
+const corr = inspect(getWeather)
+
+> corr.next()
+[fetchWeather, 'Bratislava']
+
+> corr.next('sunny')
+[fetchWeather, 'Vienna']
+
+> corr.next('cloudy')
+'sunny in Bratislava, cloudy in Vienna'
+
